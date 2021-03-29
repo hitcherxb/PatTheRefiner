@@ -142,7 +142,7 @@ navbar:not(.navbar){
   .page-top {
       color: white;
       height: 400px;
-      background-image: url("images/tree-background.jpeg");
+      background-image: url("../images/tree-background.jpeg");
   }
 
   .project {
