@@ -216,7 +216,6 @@ body {
   }
   img{
     max-width: 40vw;
-    
-    clip-path:circle(150px at center)
+    clip-path:circle(150px at center);
   }
 }
