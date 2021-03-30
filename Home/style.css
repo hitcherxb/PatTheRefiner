@@ -6,6 +6,7 @@ body {
     align-items: center;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    background-color:black;
 }
 
 /* if desktop*/
@@ -17,7 +18,9 @@ body {
 
 main {
   width: 100%;
-  max-width: 2000px;
+  max-width: 1000px;
+  margin: 5vw;
+  color: white;
 }
 
 .navbar {
@@ -27,10 +30,14 @@ main {
   background-color:white;
 }
 
+<<<<<<< HEAD
 .logo {
   color: white;
 
 }
+=======
+
+>>>>>>> ac48fbf15c5cc561958b6549e89332094eaaf310
 
 .navbar ul {
   margin: 0;
@@ -56,9 +63,10 @@ main {
 .navbar .logo {
   display: block;
   float: left;
-  font-size: 2em;
+  font-size: 3em;
   padding: 10px 20px;
   text-decoration: none;
+  text-align: center;
 }
 
 /* menu */
@@ -82,7 +90,7 @@ main {
 }
 
 .navbar .menu-icon .navicon {
-  background: black;
+  background: white;
   display: block;
   height: 2px;
   position: relative;
@@ -189,7 +197,7 @@ navbar:not(.navbar){
 
   .page-top {
       color: white;
-      height: 50vw;
+      height: 30vw;
       max-height: 450px;
       width: 100%;
       max-width: 1800px;
@@ -206,29 +214,30 @@ navbar:not(.navbar){
       /* border: 2px solid red; */
   }
 
+  .project p {
+    text-align: center;
+  }
 
 
   .project img {
       border: 2px solid black;
-      width: 100%;
+      width: 60vw;
       height: auto;
+      max-width: 400px;
   }
 
   .project1 {
     /* background-image: linear-gradient(to bottom right, #045824, #96c93d); */
-    color: black;
     flex-direction: column;
   }
 
   .project2 {
     /* background-image: linear-gradient(to bottom right, #045824, #96c93d); */
-    color: black;
     flex-direction: column-reverse;
   }
 
   .project3 {
     /* background-image: linear-gradient(to bottom right, #045824, #96c93d); */
-    color: black;
     flex-direction: column;
   }
 
@@ -283,14 +292,18 @@ navbar:not(.navbar){
     color: white;
   }
 
+  footer {
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+  }
+
   footer ul {
     display: flex;
-    width: 20vw;
-    padding-left: 0;
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
+    max-width: 900px;
   }
-
-
-
