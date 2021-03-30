@@ -1,25 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+
+
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
-    min-height: 100vh;
-    font-family: Helvetica, sans-serif;
-    position: relative;
-    width: 1440px;
-    height: 1024px;
+    font-family: 'Quicksand', sans-serif;
     background: linear-gradient(180deg, #272B2E 48.96%, rgba(38, 42, 43, 0) 100%), #FFFFFF;
     background-repeat: no-repeat;
     background-size:cover;
   }
 
-  /* if desktop*/
-@media (min-width: 900px) {
-    .topPage {
-      display: flex;
-      flex-direction: row;
-    }
-  }
   
-  a.logo{
+  .logo{
     color: whitesmoke;
+    font-size: 1px;
   }
 
   .menu li a{
@@ -35,6 +31,7 @@ body {
     position: fixed;
     width: 100%;
     z-index: 3;
+
   }
   
   .navbar ul {
@@ -165,27 +162,61 @@ body {
   /* header */
 
   h1{
-      color: whitesmoke;
-      position: relative;
-      top: 200px;
-      box-sizing: content-box;
-      width: 100%;
-      font-size: 300%;
+    color: whitesmoke;
+  
   }
 
   img{
-    position:absolute;
-    width: 30%;
-    height: 30%;
-    left: 50%;
-    top: auto;
+    width: 90vw;
     border-radius: 50%;
-    
+    margin-top: 10vw;
+    overflow:hidden;
+    clip-path: circle(110px at center);
   }
 
   /* for mobile */
 
-.topPage{
+.main{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25vw;
+    width: 90vw;
+}
+
+.nameText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameText h1{
+  width: 40vw;
+  text-align: center;
+  /* padding-left: 25vw; */
+}
+
+
+
+
+  /* if desktop*/
+
+@media (min-width: 900px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+  }
+  .nameText{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    font-size: x-large;
+  }
+  img{
+    max-width: 40vw;
+    
+    clip-path:circle(150px at center)
+  }
 }
