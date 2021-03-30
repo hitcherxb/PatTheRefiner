@@ -170,8 +170,6 @@ navbar:not(.navbar){
       width: 100%;
   }
 
-<<<<<<< HEAD
-=======
   .project1 {
     background-image: linear-gradient(to bottom right, #045824, #96c93d);
     color: white;
@@ -183,7 +181,6 @@ navbar:not(.navbar){
     color: white;
     flex-direction: column;
   }
->>>>>>> a066d4add9a45c1def89f256077f9780dbe2a7da
 
   .project3 {
     background-image: linear-gradient(to bottom right, #045824, #96c93d);
@@ -248,6 +245,3 @@ navbar:not(.navbar){
     align-items: center;
     list-style: none;
   }
-
-
-
