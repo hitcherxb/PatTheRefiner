@@ -2,13 +2,33 @@ body {
     margin: 0;
     min-height: 100vh;
     font-family: Helvetica, sans-serif;
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: linear-gradient(180deg, #272B2E 48.96%, rgba(38, 42, 43, 0) 100%), #FFFFFF;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  /* if desktop*/
+@media (min-width: 900px) {
+    .topPage {
+      display: flex;
+      flex-direction: row;
+    }
   }
   
-  a {
-    color: #000;
+  a.logo{
+    color: whitesmoke;
   }
+
+  .menu li a{
+      color: black
+  }
+
+
   
-  /* header */
+  /* navbar */
   
   .navbar {
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -141,3 +161,31 @@ body {
   navbar:not(.navbar){
     background:blue;
   }
+
+  /* header */
+
+  h1{
+      color: whitesmoke;
+      position: relative;
+      top: 200px;
+      box-sizing: content-box;
+      width: 100%;
+      font-size: 300%;
+  }
+
+  img{
+    position:absolute;
+    width: 30%;
+    height: 30%;
+    left: 50%;
+    top: auto;
+    border-radius: 50%;
+    
+  }
+
+  /* for mobile */
+
+.topPage{
+    display: flex;
+    flex-direction: column;
+}

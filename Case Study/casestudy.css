@@ -1,0 +1,12 @@
+body {
+    font-size: 96px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: greenyellow;
+}
+.logoPic{
+    width: 100px;
+
+}
+.container{
+    background-color:gray ;
+}
