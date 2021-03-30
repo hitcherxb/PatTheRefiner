@@ -1,12 +1,69 @@
-body {
-    font-size: 96px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: greenyellow;
-}
-.logoPic{
-    width: 100px;
 
+body {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:aqua;
+    
+}
+
+.pic1,  .pic2 {
+width: 20vw;
+
+}
+
+.container1{
+
+    
+}
+h1{
+    font-family:'Courier New', Courier, monospace;
+}
+.logo{
+font-size: 20;
+    color: white;
+    background-color: aliceblue;
+}
+.logoPage{
+    width: 100%;
+   
+    background-image: url("/images/ArtichokeProject.jpg");
+    
 }
 .container{
     background-color:gray ;
+}
+
+.navbar li a{
+    color:white;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 10%;
+    margin: 0 .2vw;
+    font-weight: bold;
+}
+    
+  }
+  .navbar ul a{
+
+  }
+
+  .logo{
+      color: white;
+  }
+
+  footer ul {
+    display: flex;
+    width: 20vw;
+    padding-left: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+  }
+  @media (min-width: 900px) {
+   main{
+       width: 60vw;
+   } 
+    body {
+        width: 100vw;
+    }
 }
