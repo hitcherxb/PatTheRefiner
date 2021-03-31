@@ -26,6 +26,9 @@ body {
   background: rgba(0,0,0,0.6);
 }
 
+.logo {
+  color: white;
+}
 
 .logo h1 {
   margin: 0;
