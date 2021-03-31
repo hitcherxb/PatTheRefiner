@@ -18,7 +18,7 @@ body {
 
 main {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1000px;
   margin: 5vw;
   color: white;
 }
@@ -27,11 +27,12 @@ main {
   /* position: fixed; */
   width: 100%;
   z-index: 3;
-  background-color: white;
+  background-color:white;
 }
 
 .logo {
   color: white;
+
 }
 
 .navbar ul {
@@ -58,9 +59,10 @@ main {
 .navbar .logo {
   display: block;
   float: left;
-  font-size: 2em;
+  font-size: 3em;
   padding: 10px 20px;
   text-decoration: none;
+  text-align: center;
 }
 
 /* menu */
@@ -208,6 +210,9 @@ navbar:not(.navbar){
       /* border: 2px solid red; */
   }
 
+  .project p {
+    text-align: center;
+  }
 
 
   .project img {
@@ -284,15 +289,17 @@ navbar:not(.navbar){
   }
 
   footer {
-    width: 80vw;
     background-color: white;
     width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-evenly;
   }
 
   footer ul {
     display: flex;
-    padding-left: 0;
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
+    max-width: 900px;
   }
