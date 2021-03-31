@@ -183,8 +183,14 @@ hr {
   flex-direction: column-reverse;
   align-items: center;
   /* border: 2px solid green; */
+<<<<<<< HEAD
   /* border-bottom: 2px solid black; */
   margin: 5vw;
+=======
+  border-bottom: 2px solid black;
+  padding: 5vw;
+  margin: 16px;
+>>>>>>> fe052265bfa163f5f8d006151a8e3bb61e0337fb
 }
 
 .project div {
