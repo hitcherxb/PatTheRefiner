@@ -213,12 +213,16 @@ h1{
    
     
 }
-.
 
 
 
 .logoPage{
-    width: 90vw;
+  /*  width: 90vw;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    will-change: 50%;
+margin-top: 50px;
 
 
 }
@@ -291,11 +295,12 @@ h1{
 
 
   footer {
-    background-color: white;
     width: 100vw;
+    background-color: white;
     display: flex;
     justify-content: space-evenly;
-    align-items: space-evenly;
+    align-items: space-evenly
+    
   }
 
   footer ul {
@@ -304,8 +309,12 @@ h1{
     align-items: center;
     list-style: none;
     max-width: 900px;
+    padding-left: 0;
   }
-
+footer li {
+    display: flex;
+    justify-content: space-evenly;
+}
 
   
 
