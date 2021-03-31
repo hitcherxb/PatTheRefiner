@@ -37,7 +37,7 @@ body {
     position: fixed;
     width: 100%;
     z-index: 3;
-
+    left: 0;
   }
   
   .navbar ul {
@@ -170,6 +170,7 @@ body {
 
     .main p{
       padding-top: 10vw;
+      padding-bottom: 10vw;
     }
 
     hr{
@@ -206,6 +207,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10rem;
 }
 
 .nameText h1{
@@ -216,6 +218,11 @@ body {
 
 button{
   background-color: #2B6901;
+  margin-top: 5vw;
+  margin-bottom: 8vw;
+  color: white;
+  padding: 2vw;
+  font-weight: bold;
 }
 
 
@@ -223,39 +230,9 @@ button{
 
 
 
-  /* if desktop*/
 
-@media (min-width: 900px) {
-  .main {
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    padding-top: 15vw;
-  }
-  .nameText{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    font-size: x-large;
-  }
-  img{
-    max-width: 40vw;
-    clip-path:circle(190px at center);
-    margin-top: 0vw;
-  }
-  .main p{
-    padding-top: 5vw;
-    position: relative;
-    min-height: 55vh;
-  }
 
-  footer ul li{
-    padding: 0vw 3vw;
-  }
-  hr{
-    width: 20%;
-  }
-}
+
 
   /* Footer */
   
@@ -296,7 +273,11 @@ button{
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
-    align-items: space-evenly;
+    position:fixed;
+    bottom: 0;
+    margin: 0;
+    left: 0;
+    height: 17vw;
   }
 
   footer ul {
@@ -310,4 +291,54 @@ button{
 
   footer ul li{
     padding: 0vw 3vw;
+  }
+  button{
+    margin: 0;
+    border-radius: 20px;
+  }
+
+  /* if desktop*/
+
+  @media (min-width: 900px) {
+    body{
+      position: relative;
+    }
+    .main {
+      display: flex;
+      flex-direction: row;
+      align-items: end;
+      padding-top: 20vw;
+    }
+    .nameText{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      font-size: x-large;
+    }
+    img{
+      max-width: 40vw;
+      clip-path:circle(140px at center);
+      margin-top: 0vw;
+    }
+    .main p{
+      padding-top: 5vw;
+      position: relative;
+      min-height: 30vh;
+      padding-bottom: 5vw;
+    }
+    footer ul li{
+      padding: 0vw 3vw;
+    }
+    hr{
+      width: 20%;
+    }
+    p{
+      height: 30%;
+      padding-bottom: 2vw;
+      
+    }
+    footer{
+      height: 6vw;
+    }
+
   }
