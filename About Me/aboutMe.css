@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
 
+/* #537ba9 - blue
+#2B6901 - green */
 
 body {
     display: flex;
@@ -7,9 +9,13 @@ body {
     align-items: center;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
-    background: linear-gradient(180deg, #272B2E 48.96%, rgba(38, 42, 43, 0) 100%), #FFFFFF;
+    background-color: white;
     background-repeat: no-repeat;
     background-size:cover;
+  }
+
+  p{
+    color: black;
   }
 
   
@@ -60,6 +66,7 @@ body {
     font-size: 2em;
     padding: 10px 20px;
     text-decoration: none;
+    color: #537ba9;
   }
   
   /* menu */
@@ -161,9 +168,17 @@ body {
 
   /* header */
 
+    .main p{
+      padding-top: 10vw;
+    }
+
+    hr{
+      width: 15%;
+      border:1px solid #537ba9
+    }
+
   h1{
-    color: whitesmoke;
-  
+    color: #2B6901;
   }
 
   img{
@@ -181,8 +196,9 @@ body {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    padding-top: 25vw;
+    padding-top: 18vw;
     width: 90vw;
+    margin-left: 5vw;
 }
 
 .nameText{
@@ -198,6 +214,10 @@ body {
   /* padding-left: 25vw; */
 }
 
+button{
+  background-color: #2B6901;
+}
+
 
 
 
@@ -209,6 +229,8 @@ body {
   .main {
     display: flex;
     flex-direction: row;
+    align-items: end;
+    padding-top: 15vw;
   }
   .nameText{
     display: flex;
@@ -218,7 +240,20 @@ body {
   }
   img{
     max-width: 40vw;
-    clip-path:circle(150px at center);
+    clip-path:circle(190px at center);
+    margin-top: 0vw;
+  }
+  .main p{
+    padding-top: 5vw;
+    position: relative;
+    min-height: 55vh;
+  }
+
+  footer ul li{
+    padding: 0vw 3vw;
+  }
+  hr{
+    width: 20%;
   }
 }
 
@@ -257,7 +292,7 @@ body {
   }
 
   footer {
-    background-color: white;
+    background-color: #2B6901;
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
@@ -269,5 +304,10 @@ body {
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    max-width: 900px;
+    max-width: 800px;
+    padding-left: 0vw;
+  }
+
+  footer ul li{
+    padding: 0vw 3vw;
   }
