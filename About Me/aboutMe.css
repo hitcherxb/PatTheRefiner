@@ -51,7 +51,7 @@ body {
   
   .navbar li a:hover,
   .navbar .menu-btn:hover {
-    background-color: #f4f4f4;
+    background-color: #2B6901;
   }
   
   .navbar .logo {
@@ -82,7 +82,7 @@ body {
   }
   
   .navbar .menu-icon .navicon {
-    background: #333;
+    background: #232526;
     display: block;
     height: 2px;
     position: relative;
@@ -237,22 +237,22 @@ body {
   }
 
   .fa-facebook {
-    background: #3B5998;
+    background: #232526;
     color: white;
   }
 
   .fa-instagram {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: #232526;
     color: white;
   }
 
   .fa-twitter {
-    background: #55ACEE;
+    background: #232526;
     color: white;
   }
 
   .fa-linkedin {
-    background: #007bb5;
+    background: #232526;
     color: white;
   }
 
