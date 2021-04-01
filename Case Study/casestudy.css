@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
 
+
+
+/*---------- GENERAL VIEW ---------- */
+
 body {
     display: flex;
     flex-direction: column;
@@ -11,6 +15,85 @@ body {
     background-color:#f5f5f5;
     margin: 0;
 }
+
+.lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lower div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5vw;
+}
+
+.pic {
+  width: 100%;
+}
+
+h1{
+  color:white;
+}
+
+.logoPage{
+/*  width: 90vw;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  will-change: 50%;
+  margin-top: 50px;
+}
+
+.greenade {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.greenade img { 
+  width: 100%;
+}
+
+.container{
+  /* background-color: #232526 ; */
+  margin-bottom: 2rem;
+  border-radius: 20px;
+} 
+
+.textContainer {
+  background-color: #232526 ;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+}
+
+
+.logo{
+    color: #537ba9;;
+    font-size: 30px;
+    margin: 30px;
+}
+
+
+
+/*---------- END OF GENERAL VIEW ---------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------- NAVBAR ---------- */
+
 
 .navbar {
     width: 100vw;
@@ -162,53 +245,7 @@ body {
   navbar:not(.navbar){
     background:blue;
   }
-  
 
-
-
-
-
-.pic1,  .pic2 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-h1{
-    color:white;
-}
-
-.logoPage{
-  /*  width: 90vw;*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    will-change: 50%;
-margin-top: 50px;
-}
-
-.container{
-    background-color: #232526 ;
-    padding-bottom: 2rem;
-    border-radius: 20px;
-}
-.container1{
-
-}
-.container2{
-
-}
-.container3{
-
-}
-
-
-  .logo{
-      color: #537ba9;;
-      font-size: 30px;
-      margin: 30px;
-  }
   .fa {
     padding: 20px;
     font-size: 30px;
@@ -265,6 +302,9 @@ footer li {
     justify-content: space-evenly;
 }
 
+
+
+/*---------- NAVBAR DESKTOP ---------- */
   
 @media (min-width: 64em) {  /*  Original 48em. 64 makes it switch to hamburger faster */
   .navbar li {
@@ -272,7 +312,6 @@ footer li {
   }
   .navbar li a {
     padding: 20px 30px;
-    
   }
   .navbar .menu {
     clear: none;
@@ -282,14 +321,31 @@ footer li {
   .navbar .menu-icon {
     display: none;
   }
-}
-
   
-  @media (min-width: 900px) {
-   main{
-       width: 60vw;
-   } 
-    body {
-        width: 100vw;
-    }
+}
+/*---------- END OF NAVBAR ---------- */
+
+
+
+
+
+
+
+
+/*---------- IN DESKTOP VIEW - CODE HERE ---------- */
+  
+@media (min-width: 900px) {
+  main{
+    width: 60vw;
+  } 
+
+  body {
+    width: 100vw;
+  }
+
+  .container{
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+  } 
 }
