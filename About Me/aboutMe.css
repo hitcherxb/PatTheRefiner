@@ -227,12 +227,6 @@ button{
 
 
 
-
-
-
-
-
-
   /* Footer */
   
   .fa {
@@ -302,9 +296,11 @@ button{
 
   @media (min-width: 900px) {
     body{
-      position: relative;
+      /* position: relative; */
+      width: 100vw;
     }
     .main {
+      max-width: 48em;
       display: flex;
       flex-direction: row;
       align-items: end;
@@ -323,7 +319,7 @@ button{
       font-size: x-large;
     }
     img{
-      max-width: 40vw;
+      max-width: 20vw;
       margin-top: 0vw;
     }
     .main p{
@@ -347,6 +343,6 @@ button{
       background-color: #f5f5f5;
       border: 2px #2B6901 solid;
     }
-
-
   }
+
+  @media()
