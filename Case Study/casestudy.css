@@ -1,28 +1,114 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
 
+
+
+/*---------- GENERAL VIEW ---------- */
 
 body {
     display: flex;
     flex-direction: column;
-    font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color:rgb(128, 146, 146);
     align-items: center;
     justify-content: center;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    background-color:#f5f5f5;
+    margin: 0;
+}
+
+.logo {
+  color: #537ba9;;
+  font-size: 2rem;
+  position: absolute;
+  left: 1vw;
+  top: 1vw;
+  margin: 0;
+}
+
+.lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lower div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+hr{
+  width: 40%;
+  height: 1px;
+  background-color: #537ba9;
+}
+
+.pic {
+  width: 100%;
+}
+
+.greenade {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.greenade img { 
+  width: 100%;
+}
+
+.container{
+  margin-bottom: 1rem;
+  border-radius: 20px;
+} 
+
+.container h1 {
+  color: #2B6901;
+}
+
+.textContainer {
+  background-color: #f5f5f5 ;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  padding: 0 5vw;
+}
+
+.lastContainer {
+  background-color: #f5f5f5 ;
 }
 
 
 
+
+
+
+/*---------- END OF GENERAL VIEW ---------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------- NAVBAR ---------- */
+
+
 .navbar {
-    /* position: fixed; */
-    width: 100%;
+    width: 100vw;
     z-index: 3;
-    background-color:white;
-  }
-  
-  .logo {
-    color: white;
-  
+    background-color: #f5f5f5;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 10vw;
+    max-height: 450px;
+    max-width: 1800px;
   }
   
   .navbar ul {
@@ -45,15 +131,15 @@ body {
   .navbar .menu-btn:hover {
     background-color: #f4f4f4;
   }
-  
-  .navbar .logo {
+   /* .logo removed... is anything needed? */
+  /* .navbar{  
     display: block;
     float: left;
-    font-size: 3em;
+    font-size: 1em;
     padding: 10px 20px;
     text-decoration: none;
     text-align: center;
-  }
+  } */
   
   /* menu */
   
@@ -62,7 +148,6 @@ body {
     max-height: 0;
     transition: max-height .2s ease-out;
   }
-  
   
   /* menu icon */
   
@@ -156,109 +241,11 @@ body {
     color: black;
     font-size: 1.1rem;
   }
-
-  
-  @media (min-width: 48em) {
-    .navbar li {
-      float: left;
-    }
-    .navbar li a {
-      padding: 20px 30px;
-      
-    }
-    .navbar .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .navbar .menu-icon {
-      display: none;
-    }
-  }
   
   navbar:not(.navbar){
     background:blue;
   }
-  
- .page-top {
-        color: white;
-        height: 5vw;
-       /* max-height: 450px;*/
-        width: 100%;
-        max-width: 1800px;
-        
-    }
 
-.pic1,  .pic2 {
-
-    
-    background-image: url("/images/ArtichokeMan.jpg");
-    background-image: url("/images/ArtichokeHalf.jpg");
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-
-     
-}
-
-.container1{
-
-    
-}
-
-h1{
-    
-    color:white;
-   
-    
-}
-
-
-
-.logoPage{
-  /*  width: 90vw;*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    will-change: 50%;
-margin-top: 50px;
-
-
-}
-
-.container{
-    background-color: #232526 ;
-    padding-bottom: 2rem;
-    border-radius: 20px;
-
-}
-.container1{
-
-    
-
-
-}
-.container2{
-    
-    
-
-
-}
-.container3{
-    
-    
-
-}
-
-
-  .logo{
-      color: #537ba9;;
-    
-      font-size: 30px;
-      margin: 30px;
-      
-  }
   .fa {
     padding: 20px;
     font-size: 30px;
@@ -293,7 +280,6 @@ margin-top: 50px;
     color: white;
   }
 
-
   footer {
     width: 100vw;
     background-color: white;
@@ -316,38 +302,16 @@ footer li {
     justify-content: space-evenly;
 }
 
+
+
+/*---------- NAVBAR DESKTOP ---------- */
   
-
-
-  
-  @media (min-width: 900px) {
-   main{
-       width: 60vw;
-   } 
-    body {
-        width: 100vw;
-    }
-}  /* if desktop*/
-@media (min-width: 900px) {
-  body {
-    width: 100vw;
-  }
-  .project {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .project img {
-    width: 40vw;
-  }
-}
-
-@media (min-width: 48em) {
+@media (min-width: 48em) {  /*  Original 48em. higher makes it switch to hamburger faster */
   .navbar li {
     float: left;
   }
   .navbar li a {
     padding: 20px 30px;
-    
   }
   .navbar .menu {
     clear: none;
@@ -357,4 +321,31 @@ footer li {
   .navbar .menu-icon {
     display: none;
   }
+  
+}
+/*---------- END OF NAVBAR ---------- */
+
+
+
+
+
+
+
+
+/*---------- IN DESKTOP VIEW - CODE HERE ---------- */
+  
+@media (min-width: 900px) {
+  main{
+    width: 60vw;
+  } 
+
+  body {
+    width: 100vw;
+  }
+
+  .container{
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+  } 
 }
