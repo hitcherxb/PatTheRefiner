@@ -439,4 +439,7 @@ footer li {
     margin: 0;
     color: white;
   }
+  .right-align {
+    margin-left: 30px;
+  }
 }
