@@ -333,21 +333,33 @@ footer li {
   .greenade {
     width: 60vw;
     display: flex;
+    max-width: 1200px;
   }
 
   .lower {
     width: 100vw;
+    max-width: 1000px;
   }
 
   .container img{
-    width: 40vw;
+    width: 100%;
   }
 
   .textContainer {
     flex-direction: column;
+    width: 50%;
+    
   }
 
   .picDiv {
+    display: flex;
+    width: 50%;
     flex-direction: column-reverse;
+  }
+
+  hr {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 60%;
   }
 }
