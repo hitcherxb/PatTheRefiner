@@ -325,8 +325,12 @@ button{
       margin-left: 5vw;
     }
     #quote img{
-      padding-top: 3vw;
+      padding-top: 0vw;
       margin-top: 17vw;
+    }
+    img.quote{
+      margin: 3vw;
+      margin-bottom: 9vw;
     }
 
     .main p{
