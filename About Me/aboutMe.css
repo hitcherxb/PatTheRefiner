@@ -158,7 +158,6 @@ body {
     .main p{
       padding-top: 10vw;
       padding-bottom: 10vw;
-      text-align: center;
     }
 
     hr{
@@ -173,6 +172,7 @@ body {
   img#face{
     border-radius: 50%;
     width: 80vw;
+    max-width: 500px;
     overflow:hidden;
     margin-left: 11%;
     margin-top: 4vw;
