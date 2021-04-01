@@ -184,7 +184,6 @@ body {
   img#face{
     border-radius: 50%;
     width: 90vw;
-    margin-top: 10vw;
     overflow:hidden;
     /* position: fixed;
     clip-path: circle(200px at center); */
@@ -322,6 +321,10 @@ button{
     img{
       max-width: 30vw;
       margin-top: 0vw;
+      margin-left: 5vw;
+    }
+    #quote img{
+      padding-top: 3vw;
     }
 
     .main p{
