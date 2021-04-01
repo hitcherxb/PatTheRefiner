@@ -144,24 +144,7 @@ body {
     top: 0;
   }
   
-  /* 48em = 768px */
-  
-  @media (min-width: 48em) {
-    .navbar li {
-      float: left;
-    }
-    .navbar li a {
-      padding: 20px 30px;
-    }
-    .navbar .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .navbar .menu-icon {
-      display: none;
-    }
-  }
+
   
   navbar:not(.navbar){
     background:blue;
@@ -198,10 +181,24 @@ body {
 .main{
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     padding-top: 18vw;
-    width: 90vw;
+    width: 90%;
+}
+
+#face {
+  width: 90%
+}
+
+.picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote {
+  width: 90%;
 }
 
 .nameText{
@@ -209,7 +206,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 6rem;
 }
 
 .nameText h1{
@@ -303,11 +299,9 @@ button{
       width: 100vw;
     }
     .main {
-      max-width: 48em;
       display: flex;
       flex-direction: row;
-      align-items: end;
-      padding-top: 17vw;
+      padding: 100px 0 100px 0;
     }
     .navbar li a:hover,
     .navbar .menu-btn:hover {
@@ -350,5 +344,19 @@ button{
       color: #2B6901;
       background-color: #f5f5f5;
       border: 2px #2B6901 solid;
+    }
+    .navbar li {
+      float: left;
+    }
+    .navbar li a {
+      padding: 20px 30px;
+    }
+    .navbar .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .navbar .menu-icon {
+      display: none;
     }
   }
