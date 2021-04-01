@@ -327,4 +327,34 @@ footer li {
     body {
         width: 100vw;
     }
+}  /* if desktop*/
+@media (min-width: 900px) {
+  body {
+    width: 100vw;
+  }
+  .project {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .project img {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 48em) {
+  .navbar li {
+    float: left;
+  }
+  .navbar li a {
+    padding: 20px 30px;
+    
+  }
+  .navbar .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .navbar .menu-icon {
+    display: none;
+  }
 }
