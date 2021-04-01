@@ -4,14 +4,6 @@
 #2B6901 - green */
 
 
-
-
-
-
-
-
-
-
 body {
     display: flex;
     flex-direction: column;
@@ -21,6 +13,7 @@ body {
     background-repeat: no-repeat;
     background-size:cover;
     background-color: #f5f5f5;
+    padding-bottom: 25vw;
   }
 
   
@@ -178,10 +171,10 @@ body {
 
   img#face{
     border-radius: 50%;
-    width: 90vw;
+    width: 80vw;
     overflow:hidden;
-    /* position: fixed;
-    clip-path: circle(200px at center); */
+    margin-left: 11%;
+    margin-top: 4vw;
   }
 
 
@@ -208,6 +201,7 @@ body {
 
 .quote {
   width: 90%;
+  margin: 10vw;
 }
 
 .nameText{
@@ -215,6 +209,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 7vw;
 }
 
 .nameText h1{
@@ -331,6 +326,7 @@ button{
     }
     #quote img{
       padding-top: 3vw;
+      margin-top: 17vw;
     }
 
     .main p{
