@@ -400,7 +400,7 @@ hr{
 
   footer {
     width: 100vw;
-    background-color: white;
+    background-color: darkgreen;
     display: flex;
     justify-content: space-evenly;
     align-items: space-evenly
