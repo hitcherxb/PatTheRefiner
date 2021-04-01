@@ -9,7 +9,6 @@ body {
 }
 
 .navbar {
-  /* position: fixed; */
   z-index: 3;
   color: white;
   height: 30vw;
