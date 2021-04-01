@@ -35,23 +35,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 hr{
   width: 40%;
   height: 1px;
   background-color: #537ba9;
-}
-
-.pic {
-  width: 100%;
+  margin-top: 5vw;
 }
 
 .greenade {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 1rem;
+  border-radius: 20px;
 }
 
 .greenade img { 
@@ -61,6 +60,9 @@ hr{
 .container{
   margin-bottom: 1rem;
   border-radius: 20px;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
 } 
 
 .container h1 {
@@ -72,11 +74,17 @@ hr{
   margin-bottom: 1rem;
   border-radius: 20px;
   padding: 0 5vw;
+  display: flex;
+  flex-direction: column;
 }
 
-.lastContainer {
-  background-color: #f5f5f5 ;
-  padding: 0 5vw;
+.container img {
+  width: 100vw;
+}
+
+.picDiv {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -211,159 +219,6 @@ hr{
   top: 0;
 }
 
-/* 
-.navbar {
-    width: 100vw;
-    z-index: 3;
-    background-color: #f5f5f5;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 10vw;
-    max-height: 450px;
-    max-width: 1800px;
-  }
-  
-  .navbar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    margin: 2vw;
-  }
-  
-  .navbar li a {
-    display: block;
-    color: black;
-    padding: 20px 20px;
-    border-right: 1px solid #f4f4f4;
-    text-decoration: none;
-  }
-  
-  .navbar li a:hover,
-  .navbar .menu-btn:hover {
-    background-color: #f4f4f4;
-  }
-   /* .logo removed... is anything needed? */
-  /* .navbar{  
-    display: block;
-    float: left;
-    font-size: 1em;
-    padding: 10px 20px;
-    text-decoration: none;
-    text-align: center;
-  } */
-  
-  /* menu */
-/*   
-  .navbar .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-  } */
-  
-  /* menu icon */
-  
-  /* .navbar .menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    float: right;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-  }
-  
-  .navbar .menu-icon .navicon {
-    background: white;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
-  }
-  
-  .navbar .menu-icon .navicon:before,
-  .navbar .menu-icon .navicon:after {
-    background: white;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-  }
-  
-  .navbar .menu-icon .navicon:before {
-    top: 5px;
-  }
-  
-  .navbar .menu-icon .navicon:after {
-    top: -5px;
-  }
-   */
-  /* menu btn */
-/*   
-  .navbar .menu-btn {
-    display: none;
-  }
-  
-  .navbar .menu-btn:checked ~ .menu {
-    max-height: 240px;
-  }
-  
-  .navbar .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-  }
-  
-  .navbar .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-  }
-  
-  .navbar .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-  }
-  
-  .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
-  } */
-/*   
-   .navbar li a{
-      color: white;
-      border: 2px solid white;
-      background-color: black;
-      border-radius: 10%;
-      margin: 0 .2vw;
-      font-weight: bold;
-  }
-  
-  .navbar li.opacity {
-    opacity: 1;
-    filter: alpha(opacity=100);  IE8 and lower 
-    zoom: 1; Triggers "hasLayout" in IE 7 and lower
-  }
-  
-  .navbar li.opacity:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-    zoom: 1;
-  }
-  
-  .navbar li a:hover {
-    transition: .2s;
-    color: black;
-    font-size: 1.1rem;
-  }
-  
-  navbar:not(.navbar){
-    background:blue;
-  }  */
-
-
-
-
-
-
-
   .fa {
     padding: 20px;
     font-size: 30px;
@@ -419,6 +274,10 @@ footer li {
     display: flex;
     justify-content: space-evenly;
 }
+/*---------- END OF NAVBAR ---------- */
+
+
+
 
 
 
@@ -465,17 +324,29 @@ footer li {
   }
 
   .container{
-    width: 60vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
   } 
+
+  .greenade {
+    width: 60vw;
+    display: flex;
+  }
+
   .lower {
     width: 100vw;
-    display: flex;
-    flex-direction: column;
   }
+
   .container img{
     width: 40vw;
   }
 
+  .textContainer {
+    flex-direction: column;
+  }
+
+  .picDiv {
+    flex-direction: column-reverse;
+  }
 }
