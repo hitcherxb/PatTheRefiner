@@ -110,7 +110,6 @@ hr{
 
 .navbar {
   background-color: white;
-  /* position: fixed; */
   width: 100%;
   z-index: 3;
   left: 0;
@@ -219,6 +218,9 @@ hr{
   top: 0;
 }
 
+/*---------- END OF NAVBAR ---------- */
+
+/*---------- FOOTER ---------- */
   .fa {
     padding: 20px;
     font-size: 30px;
@@ -234,48 +236,47 @@ hr{
   /* Set a specific color for each brand */
   
   .fa-facebook {
-    background: #3B5998;
-    color: white;
+    background: white;
+    color: #2B6901;
   }
 
   .fa-instagram {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    color: white;
+    background: white;
+    color: #2B6901;
   }
 
   .fa-twitter {
-    background: #55ACEE;
-    color: white;
+    background: white;
+    color: #2B6901;
   }
 
   .fa-linkedin {
-    background: #007bb5;
-    color: white;
+    background: white;
+    color: #2B6901;
   }
 
   footer {
     width: 100vw;
-    background-color: darkgreen;
+    background-color: #2B6901;
     display: flex;
-    justify-content: space-evenly;
-    align-items: space-evenly
-    
+    align-items: center;
+    justify-content: center;
   }
 
   footer ul {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
     list-style: none;
-    max-width: 900px;
+    width: 60%;
+    max-width: 700px;
     padding-left: 0;
   }
 footer li {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
-/*---------- END OF NAVBAR ---------- */
 
+/*---------- END OF FOOTER ---------- */
 
 
 
