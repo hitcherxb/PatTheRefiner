@@ -118,7 +118,7 @@ body {
 }
 
 .navbar .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 260px;
 }
 
 .navbar .menu-btn:checked ~ .menu-icon .navicon {
@@ -191,20 +191,18 @@ hr {
   display: flex;
   flex-direction: column;
   /* text-align: center; */
-  justify-content: space-between;
-  color: #537BA9;
-  background: #e4e4e4;
+  justify-content: center;
+  color: black;
   border-radius: 10%;
-  height: 5rem;
   padding: 10px;
- /* margin:10px; */
+  width: 100%;
 }
 
 
 .project img {
   height: auto;
-  border-radius: 5%;
-  width: 90%;
+  border-radius: 5px;
+  width: 100%;
   }
 
 .project2 {
@@ -214,6 +212,7 @@ hr {
 
 .project4 {
   border-bottom: none;
+  flex-direction: column;
 }
 
 footer {
@@ -241,10 +240,11 @@ footer li {
 
 .fa {
   padding: 10px;
-  font-size: larger;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+  width: 15px;
+  height: 15px;
 }
 
 .fa:hover {
@@ -282,10 +282,8 @@ footer li {
   }
   .project img {
     width: 40vw;
+    max-width: 400px;
   }
-}
-
-@media (min-width: 64em) { /*  Original 48em. 64 makes it switch to hamburger faster */
   .navbar li {
     float: left;
   }
