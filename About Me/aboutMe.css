@@ -11,6 +11,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     background-repeat: no-repeat;
     background-size:cover;
+    background-color: #f5f5f5;
   }
 
   
@@ -28,7 +29,8 @@ body {
   /* navbar */
   
   .navbar {
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    background-color: white;
+    /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -166,6 +168,7 @@ body {
     .main p{
       padding-top: 10vw;
       padding-bottom: 10vw;
+      text-align: center;
     }
 
     hr{
@@ -178,11 +181,12 @@ body {
   }
 
   img{
-    width: 90vw;
     border-radius: 50%;
+    width: 90vw;
     margin-top: 10vw;
     overflow:hidden;
-    clip-path: circle(110px at center);
+    /* position: fixed;
+    clip-path: circle(200px at center); */
   }
 
   /* for mobile */
@@ -194,8 +198,6 @@ body {
     align-items: center;
     padding-top: 18vw;
     width: 90vw;
-    margin-left: 5vw;
-    background-color: #f5f5f5;
 }
 
 .nameText{
@@ -203,7 +205,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
 }
 
 .nameText h1{
@@ -241,7 +243,9 @@ button{
   }
 
   .fa:hover {
-    opacity: 0.7;
+    /* opacity: 0.7; */
+    color: #2B6901;
+    background-color:white;
   }
 
   .fa-facebook {
@@ -303,7 +307,13 @@ button{
       display: flex;
       flex-direction: row;
       align-items: end;
-      padding-top: 20vw;
+      padding-top: 17vw;
+    }
+    .navbar li a:hover,
+    .navbar .menu-btn:hover {
+      background-color: white;
+      color: #2B6901;
+      border-bottom: 1px #2B6901 solid;
     }
     .nameText{
       display: flex;
@@ -313,14 +323,14 @@ button{
     }
     img{
       max-width: 40vw;
-      clip-path:circle(140px at center);
       margin-top: 0vw;
     }
     .main p{
       padding-top: 5vw;
       position: relative;
       min-height: 30vh;
-      padding-bottom: 5vw;
+      padding-bottom: 2vw;
+      height: 30%;
     }
     footer ul li{
       padding: 0vw 3vw;
@@ -328,13 +338,14 @@ button{
     hr{
       width: 20%;
     }
-    p{
-      height: 30%;
-      padding-bottom: 2vw;
-      
-    }
     footer{
       height: 6vw;
     }
+    button:hover{
+      color: #2B6901;
+      background-color: #f5f5f5;
+      border: 2px #2B6901 solid;
+    }
+
 
   }
