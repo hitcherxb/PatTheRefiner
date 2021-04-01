@@ -220,10 +220,13 @@ hr{
 
 /*---------- END OF NAVBAR ---------- */
 
+
+
+
 /*---------- FOOTER ---------- */
   .fa {
     padding: 20px;
-    font-size: 30px;
+    /* font-size: 15px; */
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
