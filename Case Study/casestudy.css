@@ -16,6 +16,15 @@ body {
     margin: 0;
 }
 
+.logo {
+  color: #537ba9;;
+  font-size: 2rem;
+  position: absolute;
+  left: 1vw;
+  top: 1vw;
+  margin: 0;
+}
+
 .lower {
   display: flex;
   justify-content: center;
@@ -27,24 +36,16 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 5vw;
+}
+
+hr{
+  width: 40%;
+  height: 1px;
+  background-color: #537ba9;
 }
 
 .pic {
   width: 100%;
-}
-
-h1{
-  color:white;
-}
-
-.logoPage{
-/*  width: 90vw;*/
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  will-change: 50%;
-  margin-top: 50px;
 }
 
 .greenade {
@@ -58,23 +59,27 @@ h1{
 }
 
 .container{
-  /* background-color: #232526 ; */
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border-radius: 20px;
 } 
 
+.container h1 {
+  color: #2B6901;
+}
+
 .textContainer {
-  background-color: #232526 ;
-  margin-bottom: 2rem;
+  background-color: #f5f5f5 ;
+  margin-bottom: 1rem;
   border-radius: 20px;
+  padding: 0 5vw;
+}
+
+.lastContainer {
+  background-color: #f5f5f5 ;
 }
 
 
-.logo{
-    color: #537ba9;;
-    font-size: 30px;
-    margin: 30px;
-}
+
 
 
 
@@ -104,11 +109,6 @@ h1{
     height: 10vw;
     max-height: 450px;
     max-width: 1800px;
-    padding-top: 5vw;
-  }
-  
-  .logo {
-    color: white;
   }
   
   .navbar ul {
@@ -131,15 +131,15 @@ h1{
   .navbar .menu-btn:hover {
     background-color: #f4f4f4;
   }
-  
-  .navbar .logo {
+   /* .logo removed... is anything needed? */
+  /* .navbar{  
     display: block;
     float: left;
-    font-size: 3em;
+    font-size: 1em;
     padding: 10px 20px;
     text-decoration: none;
     text-align: center;
-  }
+  } */
   
   /* menu */
   
@@ -306,7 +306,7 @@ footer li {
 
 /*---------- NAVBAR DESKTOP ---------- */
   
-@media (min-width: 64em) {  /*  Original 48em. 64 makes it switch to hamburger faster */
+@media (min-width: 48em) {  /*  Original 48em. higher makes it switch to hamburger faster */
   .navbar li {
     float: left;
   }
