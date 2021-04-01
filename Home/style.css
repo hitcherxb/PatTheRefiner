@@ -9,7 +9,6 @@ body {
 }
 
 .navbar {
-  /* position: fixed; */
   z-index: 3;
   color: white;
   height: 30vw;
@@ -285,7 +284,7 @@ footer li {
   }
 }
 
-@media (min-width: 48em) {
+@media (min-width: 64em) { /*  Original 48em. 64 makes it switch to hamburger faster */
   .navbar li {
     float: left;
   }
