@@ -242,6 +242,7 @@ border: 2px #2B6901 solid;
   
     footer {
       width: 100vw;
+      height: 10em;
       background-color: #2B6901;
       display: flex;
       align-items: center;
@@ -333,5 +334,8 @@ border: 2px #2B6901 solid;
         margin-bottom: 5vw;
     }
 
+    .footer {
+      height: 3vw;
+    }
 
 }
