@@ -209,7 +209,7 @@ hr {
   flex-direction: column;
 }
 
-.imgLink {
+.imgLink, .projectlink {
   opacity: 1;
   display: block;
   width: 100%;
@@ -218,7 +218,7 @@ hr {
   backface-visibility: hidden;
 }
 
-.imgLink:hover {
+.imgLink:hover, .projectlink:hover {
   cursor: pointer;
   opacity: 0.3;
 }
