@@ -1,13 +1,343 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
 
-section div{
-    background-color:
-}
+
+/*---------- MOBILE VIEW ---------- */
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
+    justify-content: center;
+    font-size: 18px;
     font-family: 'Quicksand', sans-serif;
+    background-color:#f5f5f5;
+    margin: 0;
+}
+
+main {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header img {
+    width: 90vw;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.logo {
+    padding-top: 0;
+}
+
+.textContainer {
+    width: 90vw;
+    margin-top: 5vw;
+    background-color: #537ba9;
+    color: white;
+    border-radius: 5%;
+}
+
+.textContainer p {
+    padding-left: 2vw;
+}
+
+.nameContainer {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputContainer {
+    width: 60%;
+    height: 3vw;
+}
+
+.messageContainer {
+    width: 90vw;
+    height: 30vw;
+    margin-bottom: 5vw;
+}
+
+button{
+    background-color: #2B6901;
+    margin-top: 5vw;
+    padding-bottom: 5vw;
+    color: white;
+    padding: 2vw;
+    font-weight: bold;
+    margin: 0;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+button:hover{
+color: #2B6901;
+background-color: #f5f5f5;
+border: 2px #2B6901 solid;
+}
+
+
+
+/*---------- END OF MOBILE VIEW ---------- */
+
+
+
+/*---------- NAVBAR ---------- */
+
+.navbar {
+    background-color: white;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .navbar li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .navbar li a:hover,
+  .navbar .menu-btn:hover {
+    background-color: white;
+  }
+  
+  .navbar .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #537ba9;
+  }
+  
+  /* menu */
+  
+  .navbar .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .navbar .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .navbar .menu-icon .navicon {
+    background: #232526;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .navbar .menu-icon .navicon:before,
+  .navbar .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .navbar .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .navbar .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .navbar .menu-btn {
+    display: none;
+  }
+  
+  .navbar .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .navbar .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .navbar .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .navbar .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /*---------- END OF NAVBAR ---------- */
+  
+  /*---------- FOOTER ---------- */
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+    }
+  
+    .fa:hover {
+      opacity: 0.7;
+    }
+    
+    /* Set a specific color for each brand */
+    
+    .fa-facebook {
+      background: white;
+      color: #2B6901;
+    }
+  
+    .fa-instagram {
+      background: white;
+      color: #2B6901;
+    }
+  
+    .fa-twitter {
+      background: white;
+      color: #2B6901;
+    }
+  
+    .fa-linkedin {
+      background: white;
+      color: #2B6901;
+    }
+  
+    footer {
+      width: 100vw;
+      background-color: #2B6901;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5vw;
+      max-height: 5vw;
+    }
+  
+    footer ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      width: 60%;
+      max-width: 700px;
+      padding-left: 0;
+    }
+  footer li {
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  /*---------- END OF FOOTER ---------- */
+
+
+/*---------- NAVBAR DESKTOP ---------- */
+  
+@media (min-width: 48em) {  /*  Original 48em. higher makes it switch to hamburger faster */
+    .navbar li {
+      float: left;
+    }
+    .navbar li a {
+      padding: 20px 30px;
+      color: black;
+    }
+    .navbar .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .navbar .menu-icon {
+      display: none;
+    }
+    .navbar li a:hover,
+      .navbar .menu-btn:hover {
+        background-color: white;
+        color: #2B6901;
+        border-bottom: 1px #2B6901 solid;
+      }
+  }
+  /*---------- END OF NAVBAR ---------- */
+
+
+
+
+  /*---------- IN DESKTOP VIEW - CODE HERE ---------- */
+
+
+  @media (min-width: 900px) {
+    .navbar {
+      max-width: 1200px;
+      max-height: 100px;
+    }
+
+    body {
+        /* width: 100vw; */
+      }
+
+    header img {
+        width: 90vw;
+        max-width: 1200px;
+    }
+
+    .textContainer {
+        width: 50vw;
+        margin-top: 5vw;
+        background-color: #537ba9;
+        color: white;
+        border-radius: 5%;
+    }
+    
+    .textContainer p {
+        padding-left: 2vw;
+    }
+    
+    .nameContainer {
+        width: 30vw;
+    }
+    
+    .inputContainer {
+        width: 90%;
+        height: 3vw;
+    }
+    
+    .messageContainer {
+        width: 50vw;
+        height: 30vw;
+        margin-bottom: 5vw;
+    }
+
+
 }
