@@ -19,9 +19,6 @@ body {
 .logo {
   color: #537ba9;;
   font-size: 2rem;
-  position: absolute;
-  left: 1vw;
-  top: 1vw;
   margin: 0;
 }
 
@@ -319,6 +316,9 @@ footer li {
 /*---------- IN DESKTOP VIEW - CODE HERE ---------- */
   
 @media (min-width: 900px) {
+  .navbar {
+    max-width: 1200px;
+  }
 
   body {
     width: 100vw;

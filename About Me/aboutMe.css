@@ -10,16 +10,10 @@ body {
     align-items: center;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
-    background-repeat: no-repeat;
-    background-size:cover;
     background-color: #f5f5f5;
   }
 
-  .page-top{
-    width: 100%;
-  }
 
-  
   .logo{
     color: whitesmoke;
     font-size: 1px;
@@ -29,19 +23,27 @@ body {
       color: black
   }
 
-  .quote{
-    width: 10vw;
-  }
+
+
+
+
+
+
+
+
+
+
+
 
   
   /* navbar */
   
   .navbar {
     background-color: white;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 3;
-    left: 0;
+    /* left: 0; */
   }
   
   .navbar ul {
@@ -174,16 +176,24 @@ body {
     width: 80vw;
     max-width: 500px;
     overflow:hidden;
-    margin-left: 11%;
+    /* margin-left: 11%; */
     margin-top: 4vw;
   }
 
 
-  /* for mobile */
+
+
+
+
+
+
+
+  /* ---------- for mobile  ----------*/
 
 .main{
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
     /* justify-content: center;
     align-items: center; */
     padding-top: 18vw;
@@ -198,11 +208,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.quote {
+#quote {
+  display: flex;
+}
+
+#quote img {
   width: 90%;
-  margin: 10vw;
+  margin-top: 10vw;
+  display: flex;
+  align-items: center;
 }
 
 .nameText{
@@ -210,7 +227,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 7vw;
+  /* margin-left: 7vw; */
 }
 
 .nameText h1{
@@ -270,11 +287,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  position:fixed;
   bottom: 0;
   margin: 0;
-  left: 0;
-  height: 17vw;
+  margin-top: 5vw;
+  height: 12vw;
 }
 
 footer ul {
@@ -285,6 +301,7 @@ footer ul {
   max-width: 700px;
   padding-left: 0;
 }
+
 footer li {
   display: flex;
   justify-content: space-around;
@@ -292,66 +309,6 @@ footer li {
 
 /*---------- END OF FOOTER ---------- */
 
-  /* Footer */
-  
-  /* .fa {
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-
-  .fa:hover {
-    opacity: 0.7;
-    color: #2B6901;
-    background-color:white;
-  }
-
-  .fa-facebook {
-    background: #232526;
-    color: white;
-  }
-
-  .fa-instagram {
-    background: #232526;
-    color: white;
-  }
-
-  .fa-twitter {
-    background: #232526;
-    color: white;
-  }
-
-  .fa-linkedin {
-    background: #232526;
-    color: white;
-  }
-
-  footer {
-    background-color: #2B6901;
-    width: 100vw;
-    display: flex;
-    justify-content: space-evenly;
-    position:fixed;
-    bottom: 0;
-    margin: 0;
-    left: 0;
-    height: 17vw;
-  }
-
-  footer ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-    max-width: 800px;
-    padding-left: 0vw;
-  }
-
-  footer ul li{
-    padding: 0vw 3vw;
-  }*/
   button{
     margin: 0;
     border-radius: 20px;
@@ -359,45 +316,57 @@ footer li {
   } 
 
 
-
-
-
-
-
-  /* if desktop*/
+  /* ---------- if desktop ----------*/
 
   @media (min-width: 900px) {
     body{
       /* position: relative; */
-      width: 100%;
+      width: 100vw;
+      max-width: 1200px;
     }
+
+    .navbar {
+      width: 100%;
+      max-width: 1200px;
+    }
+
     .main {
       display: flex;
       flex-direction: row;
-      padding: 100px 0 100px 0;
+      padding-top: 100px;
+      max-width: 1000px;
     }
+
     .navbar li a:hover,
     .navbar .menu-btn:hover {
       background-color: white;
       color: #2B6901;
       border-bottom: 1px #2B6901 solid;
     }
+
     .nameText{
       display: flex;
       flex-direction: column;
       width: 100%;
       font-size: x-large;
     }
+
+    .picture {
+      align-items: center;
+      margin-left: 5vw;
+    }
+
     img{
       max-width: 30vw;
       margin-top: 0vw;
-      margin-left: 5vw;
+      /* margin-left: 5vw; */
     }
+
+
     #quote img{
+      width: 80%;
       padding-top: 0vw;
       margin-top: 17vw;
-    }
-    img.quote{
       margin: 3vw;
       margin-bottom: 9vw;
     }
@@ -409,31 +378,39 @@ footer li {
       padding-bottom: 2vw;
       height: 30%;
     }
+
     footer ul li{
       padding: 0vw 3vw;
     }
+
     hr{
       width: 20%;
     }
+
     footer{
       height: 6vw;
     }
+
     button:hover{
       color: #2B6901;
       background-color: #f5f5f5;
       border: 2px #2B6901 solid;
     }
+
     .navbar li {
       float: left;
     }
+
     .navbar li a {
       padding: 20px 30px;
     }
+
     .navbar .menu {
       clear: none;
       float: right;
       max-height: none;
     }
+
     .navbar .menu-icon {
       display: none;
     }
