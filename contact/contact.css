@@ -27,7 +27,9 @@ header img {
 
 h1 {
     margin: 0;
-    font-size: 3rem;
+    font-size: 2em;
+    font-weight: lighter;
+    padding-top: 0.5vw;
 }
 
 .logo {
@@ -35,11 +37,11 @@ h1 {
 }
 
 .textContainer {
-    width: 90vw;
+    width: 90%;
     margin-top: 5vw;
     background-color: #537ba9;
     color: white;
-    border-radius: 5%;
+    border-radius: 50% 20% / 10% 40%;
 }
 
 .textContainer p {
@@ -121,7 +123,7 @@ border: 2px #2B6901 solid;
   .navbar .logo {
     display: block;
     float: left;
-    font-size: 2em;
+    /* font-size: 2em; */
     padding: 0px 20px;
     text-decoration: none;
     color: #537ba9;
@@ -303,21 +305,13 @@ border: 2px #2B6901 solid;
       max-height: 100px;
     }
 
-    body {
-        /* width: 100vw; */
-      }
-
     header img {
         width: 90vw;
         max-width: 1200px;
     }
 
     .textContainer {
-        width: 50vw;
-        margin-top: 5vw;
-        background-color: #537ba9;
-        color: white;
-        border-radius: 5%;
+        width: 90%;
     }
     
     .textContainer p {
