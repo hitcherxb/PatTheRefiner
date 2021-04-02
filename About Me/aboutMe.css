@@ -255,6 +255,7 @@ button{
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+  width: 16px;
 }
 
 .fa:hover {
