@@ -15,7 +15,7 @@ body {
   max-height: 450px;
   width: 100vw;
   max-width: 1200px;
-  background-image: url("../images/tree-background.jpeg");
+  background-image: url("images/tree-background.jpeg");
   background-position: center;
   background-repeat: no-repeat;
 }
