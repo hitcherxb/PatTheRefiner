@@ -173,7 +173,7 @@ body {
 
   img#face{
     border-radius: 50%;
-    width: 80vw;
+    width: 100%;
     max-width: 500px;
     overflow:hidden;
     /* margin-left: 11%; */
@@ -321,8 +321,8 @@ footer li {
   @media (min-width: 900px) {
     body{
       /* position: relative; */
-      width: 100vw;
-      max-width: 1200px;
+      width: 100%;
+
     }
 
     .navbar {
@@ -333,8 +333,14 @@ footer li {
     .main {
       display: flex;
       flex-direction: row;
+      justify-content: center;
       padding-top: 100px;
-      max-width: 1000px;
+      margin: 0 30px 0 30px;
+      max-width: 1200px;
+    }
+
+    .main div {
+      padding: 0 30px 0 30px;
     }
 
     .navbar li a:hover,
@@ -347,7 +353,7 @@ footer li {
     .nameText{
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 40%;
       font-size: x-large;
     }
 
@@ -355,6 +361,7 @@ footer li {
       align-items: center;
       margin-left: 5vw;
     }
+
 
     img{
       max-width: 30vw;
@@ -395,6 +402,7 @@ footer li {
       color: #2B6901;
       background-color: #f5f5f5;
       border: 2px #2B6901 solid;
+      cursor:pointer;
     }
 
     .navbar li {
