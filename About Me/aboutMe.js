@@ -5,8 +5,8 @@ function burgerTransition(e) {
 document.addEventListener("keypress", function onPress(event) {
     if (event.key === "z" && event.ctrlKey) {
         // document.body.style.backgroundColor = 'green';
-        document.body.style.backgroundImage = "url('../images/space.jpeg')";
-        document.querySelector('#face').src = '../images/alien.jpeg'
+        document.body.style.backgroundImage = "url('pics/space.jpeg')";
+        document.querySelector('#face').src = 'pics/alien.jpeg'
         document.querySelector('.nameText h1').innerHTML = 'HTM aLiens!'
         document.getElementById("name").style.color = "green";
         document.querySelector("p").style.color = "green";
